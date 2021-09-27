@@ -30,11 +30,14 @@
 
 
 // b) Create the function that makes the test pass.
-const favProblem = (nums) => {
-  
+                    //PSUEDO
+//create function with a number argument
+//create empty array and iterate with stating inedx 2
+//push empty array into iterater and return.
+
+const favProblem = (nums) => { 
     let fav = [0, 1];
     let problem = [];
-    
     for(let i = 2; i <= nums; i++) {
       fav[i] = fav[i - 1] + fav[i - 2]; 
       problem.push(fav[i]);
@@ -66,6 +69,11 @@ var fullArr2 = ["hello", 7, 23, -823, false, 78, null, "67", 6, "number"]
 
 
 // b) Create the function that makes the test pass.
+                    //PSUEDO
+// create variables to filter the numbers and odds
+//create a function that will but each number from least to greatest
+//return array
+
 let fixFullArr1 = fullArr1.filter(value =>{
     return typeof value === "number"
     })
@@ -117,6 +125,7 @@ var numbersToAdd3 = []
 
 
 // b) Create the function that makes the test pass.
+
 // let newNums = numbersToAdd1.filter(value => {
 //     return value !== 0
 //     })
@@ -133,4 +142,4 @@ var numbersToAdd3 = []
     console.log(numbersToAdd3.map(numAdder));
     
     //this problem i had a hard time figuring out how "(sum => value => sum += value)(0)" works
-    //I will be able to research this during the week. It was a very busy weekend. 
+    //I will be able to research this during the week. It was a very busy weekend.
